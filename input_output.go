@@ -1,8 +1,8 @@
-package main 
+package main
 
-import(
-	"fmt"
+import (
 	"bufio"
+	"fmt"
 	"os"
 )
 
@@ -13,11 +13,11 @@ func main() {
 	fmt.Println(number)
 
 	//imprimir con formato, introducimos verbos en las cadenas
-	nombre := "Alfredo" 
-	fmt.Printf("mi nombre es %v\n",nombre)
+	nombre := "Alfredo"
+	fmt.Printf("mi nombre es %v\n", nombre)
 
 	numero := 4
-	fmt.Printf("El numero es %d\n ",numero) 	
+	fmt.Printf("El numero es %d\n ", numero)
 	/*
 		%v para valores de variables por default
 		%d para numeros
@@ -35,9 +35,9 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Println("ingrese su nombre")
 	nombre, err := reader.ReadString('\n')
-	if err!=nil{
+	if err != nil {
 		fmt.Println(err)
-	}else{
+	} else {
 		fmt.Println("Hola " + nombre)
 	}
 }
